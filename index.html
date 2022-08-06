@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <link rel="shortcut icon" href="favicon.png" type="image/png"> 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="description"
+         content="With the divine grace of the almighty, inviting you and your family to Sonali's wedding to be held on 29th November at Ashirwad Garden, Ratu, Ranchi from 7:00 PM onwards.">
+      <meta name="author" content="Vinit Shahdeo">
+      <meta name="email" content="vinitshahdeo@gmail.com">
+      <meta name="copyright" content="Vinit Shahdeo 2020" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Wedding Invitation | 29th Nov | Ashirwad Garden, Ranchi" />
+      <meta property="og:description"
+         content="With the divine grace of the almighty, inviting you and your family to elder sister's wedding to be held on 29th November at Ashirwad Garden, Ratu, Ranchi from 7:00 PM onwards." />
+      <meta property="og:image" content="https://raw.githubusercontent.com/vinitshahdeo/vinitshahdeo/master/images/sonali.jpeg" />
+      <meta property="og:url" content="" />
+      <meta property="og:site_name" content="Wedding Invitation" />
+      <meta name="twitter:card" content="website">
+      <meta name="twitter:site" content="Wedding Invitation | 08th Sept">
+      <meta name="twitter:title" content="Wedding Invitation | 08th Sept">
+      <meta name="twitter:description"
+         content="With the divine grace of the almighty, inviting you and your family to elder sister's wedding to be held on 29th November at Ashirwad Garden, Ratu, Ranchi from 7:00 PM onwards.">
+      <meta name="twitter:creator" content="@Vinit_Shahdeo">
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/vinitshahdeo/vinitshahdeo/master/images/sonali.jpeg">
+
+      <title>Wedding Invitation | Sept 08 </title>
+
+      <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+
+span{
+	position: absolute;
+	pointer-events: none;
+	filter: drop-shadow(0 0 15px rgba(0,0,0,0.5));
+	animation: fadeInOut 1s linear infinite;
+}
+@keyframes fadeInOut{
+	0%,100%{
+		opacity: 0;
+	}
+	20%,80%{
+		opacity: 1;
+	}
+}
+span::before{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-image : url("./heart.png");
+	background-size: cover;
+	animation: moveShape 1s linear infinite;
+}
+@keyframes moveShape{
+	0%{
+		transform: translate(0) rotate(0deg);
+	}
+	100%{
+		transform: translate(300px) rotate(360deg);
+	}
+}
+      </style>
+   </head>
+   <body>
+       <div class="sakura-falling"></div>
+      <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
+      <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration"> 
+      <section id="media"></section>
+      <div class="wrap">
+         <div class="title">
+            <h1 style="margin-bottom: 15px;">Hari </h1>
+            <h2>&</h2>
+            <h1 style="margin-top: 5px;">Deepika</h1>
+            <h3>Are getting married</h3>
+            <p>
+               on <strong class="date">08 September 2022</strong>, At <strong class="place">Solai Mahal</strong> Namakkal Rd, Trichy                
+            </p>
+         </div>
+      </div>
+      <div style="margin-top: -38px;" id="time"></div>
+      <p class="dance-med">
+         dinner & dancing to follow
+      </p>
+      <div class="actions">
+        <a href="https://goo.gl/maps/ei8MLwnVZurhEY3P9" target="_blank">
+          <div class="venue">SEE THE VENUE</div>
+        </a>
+        <a href="https://github.com/vinitshahdeo/vinitshahdeo/raw/master/docs/Sonali%20%26%20Gagan.pdf" download="Invitation | 23 Nov | Hope to see you there!">
+          <div class="venue">DOWNLOAD INVITATION CARD</div>
+        </a>
+      </div>
+      <p class="footer">
+         Can't wait to celebrate auspicious moment of our family with you! <br>
+      </p>
+      <div class="music">
+         <audio src="./assets/mp3/bg.mp3" id="my_audio" loop="loop"></audio> 
+       </div>
+   
+      <img style="margin-top: -1%;" src="./qu.jpeg" alt="" height="15%" width="15%" srcset="">
+      <script>
+         document.addEventListener('mousemove',function(e){
+    let body  = document.querySelector('body')
+    let heart = document.createElement('span')
+    let x = e.offsetX;
+    let y = e.offsetY;
+    heart.style.left = x+'px';
+    heart.style.top = y+'px';
+
+    let size = Math.random() * 80;
+    heart.style.width = 20 +size+'px';
+    heart.style.height = 20+ size+'px';
+
+    let transFormValue = Math.random() * 360;
+    heart.style.transform = 'rotate('+transFormValue+'deg)'
+
+    body.appendChild(heart);
+
+    setTimeout(function(){
+        heart.remove();
+    },1000)
+})
+      </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+      <script  src="./js/script.js"></script>
+   </body>
+
+
+</html>
