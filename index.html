@@ -66,7 +66,7 @@ span::before{
       </style>
    </head>
    <body>
-      <div class="sample">
+      <!-- <div class="sample"> -->
        <div class="sakura-falling"></div>
       <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
       <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration"> 
@@ -102,7 +102,7 @@ span::before{
        </div>
    
       <img style="margin-top: -1%;" src="./qu.jpeg" alt="" height="15%" width="15%" srcset="">
-   </div>
+   <!-- </div> -->
       <script>
          
          document.addEventListener('mousemove',function(e){
@@ -133,7 +133,7 @@ document.querySelector('.sample').addEventListener('touchstart',function(e){
     startX = e.targetTouches[0].pageX;
     this.addEventListener('touchmove',function(e){
       deltaX = e.targetTouches[0].pageX - startX;
-      let body  = document.querySelector('body')
+let body  = document.querySelector('body')
     let heart = document.createElement('span')
     let x = e.offsetX;
     let y = e.offsetY;
